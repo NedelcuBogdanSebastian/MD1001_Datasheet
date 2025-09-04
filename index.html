@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD-1001 User Manual - Simtech International</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #0066cc 0%, #003366 100%);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        .logo-container {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .logo {
+            font-family: 'Arial Black', Arial, sans-serif;
+            font-size: 28px;
+            color: #0066cc;
+            letter-spacing: 1px;
+        }
+        h1 {
+            font-size: 32px;
+            margin: 10px 0;
+        }
+        .subtitle {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .contact-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .manual-content {
+            padding: 30px;
+        }
+        h2 {
+            color: #0066cc;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 10px;
+            margin: 25px 0 15px 0;
+        }
+        h3 {
+            color: #004080;
+            margin: 20px 0 10px 0;
+        }
+        .disclaimer {
+            background-color: #f9f9f9;
+            border-left: 4px solid #0066cc;
+            padding: 20px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .specs-table, .specs-table th, .specs-table td {
+            border: 1px solid #ddd;
+        }
+        .specs-table th, .specs-table td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+        .specs-table th {
+            background-color: #f2f2f2;
+        }
+        .figure {
+            text-align: center;
+            margin: 25px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+        .figure img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            padding: 5px;
+            background: white;
+        }
+        .caption {
+            font-style: italic;
+            margin-top: 10px;
+            color: #666;
+        }
+        .warning {
+            background-color: #fff9e6;
+            border-left: 4px solid #ffcc00;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .toc {
+            background: #f0f5ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        .toc-item {
+            margin: 10px 0;
+        }
+        .toc-sub {
+            margin-left: 20px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: #0066cc;
+            color: white;
+            border-radius: 0 0 10px 10px;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .manual-content {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+				<img width="600" height="160" src="sigla.png" alt="MD-1001 Monitoring and Data Acquisition Unit">			
+            </div>
+            <h1>DATA ACQUISITION AND ONLINE MONITORING UNIT</h1>
+            <div class="subtitle">MODEL: MD-1001</div>
+            <div class="subtitle">USER MANUAL</div>
+            
+            <div class="contact-info">
+                Phone/Fax: +40 31 4381264<br>
+                Email: office@simtech-international.ro<br>
+                Web: www.simtech-international.ro
+            </div>
+        </header>
+
+        <div class="manual-content">
+            <div class="disclaimer">
+                <p>This manual is the property of Simtech International and is provided for the exclusive use of Simtech International's customers under a contractual agreement for equipment and services.</p>
+                <p>No part of this manual may be reproduced or duplicated without the written consent of the author.</p>
+                <p>While every effort has been made to ensure accuracy, Simtech International cannot accept liability for the existence of typographical errors in this manual or for any losses resulting from its use. We are grateful for any feedback received and will endeavor to correct known errors as quickly as possible.</p>
+            </div>
+
+            <div class="toc">
+                <h2>Table of Contents</h2>
+                <div class="toc-item">1. Introduction</div>
+                <div class="toc-item">2. Technical Specifications</div>
+                <div class="toc-item">3. System Components</div>
+                <div class="toc-sub">
+                    <div class="toc-item">3.1 Unified Signal Input Module</div>
+                    <div class="toc-item">3.2 Cooling Control Module</div>
+                    <div class="toc-item">3.3 PT100 RTD Input Module</div>
+                    <div class="toc-item">3.4 Digital Input Module</div>
+                </div>
+                <div class="toc-item">4. Installation</div>
+                <div class="toc-sub">
+                    <div class="toc-item">4.1 Mounting</div>
+                    <div class="toc-item">4.2 Wiring and Connection</div>
+                </div>
+            </div>
+
+            <h2>1. Introduction</h2>
+            <p>The MD-1001 data acquisition unit is designed to receive signals from sensors mounted on transformers or other monitored equipment. It processes the acquired/calculated parameters and transmits them to the end-user's server.</p>
+            <p>The MD-1001 (Fig. 1) is equipped with local data storage capabilities, maintaining a historical database of acquired parameters directly on the unit's internal solid-state drive.</p>
+            
+            <div class="figure">
+                <img src="pic1.png" alt="MD-1001 Monitoring and Data Acquisition Unit">
+                <div class="caption">Figure 1: MD-1001 Monitoring and Data Acquisition Unit</div>
+            </div>
+
+            <h2>2. Technical Specifications</h2>
+            <p><strong>General Characteristics:</strong></p>
+            <ul>
+                <li><strong>Operating Temperature:</strong> -40 °C to +65 °C</li>
+                <li><strong>Storage Memory:</strong> min. 60 GB SSD on main computer module</li>
+                <li><strong>Software:</strong> Integrated for data acquisition, database management, parameter calculation, and transmission</li>
+                <li><strong>Power Supply:</strong> 5 V DC</li>
+                <li><strong>Power Consumption:</strong> max. 30 VA</li>
+                <li><strong>Enclosure:</strong> Steel / Galvanized Steel</li>
+                <li><strong>Dimensions (L x W):</strong> 350 x 250 mm</li>
+                <li><strong>Weight:</strong> approx. 3 kg</li>
+            </ul>
+
+            <table class="specs-table">
+                <tr>
+                    <th>Communication Interfaces</th>
+                    <th>Supported Protocols</th>
+                </tr>
+                <tr>
+                    <td>• Fiber Optic<br>• Ethernet (RJ45)<br>• RS-485 (Serial)</td>
+                    <td>• MODBUS TCP<br>• MODBUS RTU</td>
+                </tr>
+            </table>
+
+            <p><strong>Analog & Digital Inputs:</strong></p>
+            <ul>
+                <li>PT100 RTD (3-wire)</li>
+                <li>Type K Thermocouple</li>
+                <li>Unified Analog Signals: 4-20 mA, 0-10 V, 0-20 mA</li>
+                <li>Digital Inputs (Dry Contact / Voltage)</li>
+                <li>RS-485 Communication Port</li>
+            </ul>
+
+            <h2>3. System Components</h2>
+            <p>The MD-1001 system comprises a central acquisition module (Fig. 2) and up to four different types of plug-in signal conditioning modules. All secondary modules are powered directly by the central acquisition module.</p>
+            
+            <div class="figure">
+                <img src="pic2.png" alt="Central Acquisition Module">
+                <div class="caption">Figure 2: Central Acquisition Module</div>
+            </div>
+
+            <p>The central module aggregates data from all connected sub-modules and hosts a MODBUS RTU server, making the data accessible via the RS-485 communication protocol.</p>
+
+            <h3>3.1 Unified Signal Input Module</h3>
+            <p>This module is available in three variants: 0-20 mA, 0-10 V, or 4-20 mA input.</p>
+            <p>Each module features 6 isolated channels. Additional modules can be installed to expand the system's capacity based on customer requirements.</p>
+            <ul>
+                <li><strong>For 0-20 mA & 4-20 mA modules:</strong> A precision 120 Ω resistor is used for current-to-voltage conversion on each channel.</li>
+                <li><strong>For the 0-10 V module:</strong> A high-impedance 20 kΩ input is used for voltage measurement.</li>
+            </ul>
+            
+            <div class="figure">
+                <img src="pic3.png" alt="Unified Signal Input Module">
+                <div class="caption">Figure 3: Unified Signal Input Module</div>
+            </div>
+
+            <h3>3.2 PT100 RTD Input Module</h3>
+            <p>The PT100 Module (Fig. 5) provides 4 channels for 3-wire PT100 RTD temperature sensors. The system can be expanded with additional modules for higher channel counts.</p>
+            <p>This module acquires temperature values and transmits them digitally to the central acquisition module.</p>
+            
+            <div class="figure">
+                <img src="pic4.png" alt="PT100 RTD Input Module">
+                <div class="caption">Figure 5: PT100 RTD Input Module</div>
+            </div>
+
+            <h3>3.3 Digital Input Module</h3>
+            <p>The Digital Input Module provides 11 optically isolated digital input channels. These inputs are designed for dry contacts or voltage signals. Additional modules can be added for system expansion. Status data from this module is sent digitally to the central module.</p>
+            
+            <div class="figure">
+                <img src="pic5.png" alt="Digital Input Module">
+                <div class="caption">Figure 6: Digital Input Module</div>
+            </div>
+
+            <h3>3.4 Cooling Control Module</h3>
+            <p>The Cooling Control Module (Fig. 4) features one 4-20 mA analog input (typically for Load Current on Phase B) and one PT100 RTD input (for Oil Temperature).</p>
+            <p>Using these inputs, the module calculates the winding temperature and automatically controls the cooling stages accordingly.</p>
+            <p>The module includes a real-time clock for stage rotation and can control up to 5 cooling stages via dry contact (relay) outputs. It transmits the acquired load current and oil temperature values back to the central module via a dedicated data interface.</p>
+            
+            <div class="figure">
+                <img src="pic6.png" alt="Cooling Control Module">
+                <div class="caption">Figure 4: Cooling Control Module</div>
+            </div>
+
+
+            <h2>4. Installation</h2>
+            <h3>4.1 Mounting</h3>
+            <p>The MD-1001 unit is designed for mounting within a designated monitoring cabinet. The overall dimensions of the cabinet will vary depending on the number and type of input modules required for the specific application.</p>
+            
+            <div class="figure">
+                <img src="pic7.png" alt="Typical MD-1001 System Mounting">
+                <div class="caption">Figure 7: Typical MD-1001 System Mounting</div>
+            </div>
+
+            <div class="warning">
+                <strong>WARNING:</strong> Installation and mounting of the MD-1001 system must be performed exclusively by authorized Simtech International personnel.
+            </div>
+
+            <h3>4.2 Wiring and Connection</h3>
+            <p>Figure 8 illustrates the standard connection scheme for the MD-1001 system.</p>
+            
+            <div class="figure">
+                <img src="pic8.png" alt="MD-1001 System Connection Overview">
+                <div class="caption">Figure 8: MD-1001 System Connection Overview</div>
+            </div>
+
+            <p><strong>Connection Points:</strong></p>
+            <ol>
+                <li><strong>Primary Connections:</strong> Power Supply (5V DC), Ambient Temperature Sensor, MODBUS RS-485 Communication.</li>
+                <li><strong>Analog Inputs:</strong> Connection for 0-20 mA or 4-20 mA unified signal sensors.</li>
+                <li><strong>PT100 Inputs:</strong> Connections for 3-wire PT100 RTD temperature sensors.</li>
+                <li><strong>Digital Inputs:</strong> Connections for optically isolated digital signals.</li>
+            </ol>
+
+            <div class="warning">
+                <strong>WARNING:</strong> All electrical wiring and connection of the MD-1001 system must be performed exclusively by authorized Simtech International personnel.
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Simtech International © 2025 | MD-1001 User Manual v2.0</p>
+            <p>Document ID: MD1001-UM-EN-2.0</p>
+        </div>
+    </div>
+</body>
+</html>
